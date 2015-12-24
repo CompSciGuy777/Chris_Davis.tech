@@ -21,7 +21,8 @@
 
 	1.  What are we building?
 
-		We are building a personal site.  A place to showcase our work, write Articles (discuss tricks, ideas, and our current trends), and have people contact us
+		We are building a personal site.  A place to showcase our work, write Articles (discuss tricks, ideas, 
+		and our current trends), and have people contact us
 
 	2. Who are we building it for?
 
@@ -58,13 +59,16 @@
 
 		- As a user, I want to be able to edit and delete posts, so I can manage my blog
 
-		- As a user, I want to be able to write posts in markdown, so that it is easy for me to write posts
+		- As a user, I want to be able to write posts in markdown, so that it is easy for me to 
+		write posts
 
 		- As a user, I want to be able to highlight various syntax of code blocks I share on my site
 
-		- As a user, I want to show visitors and potential employers example of stuff I have built, through pictures and videos.
+		- As a user, I want to show visitors and potential employers example of stuff I have built, 
+		through pictures and videos.
 
-		- As a user, I want to have visitors be able to leave comments and contact me through a form on my site
+		- As a user, I want to have visitors be able to leave comments and contact me 
+		through a form on my site
 
 
 ## Modeling our Data

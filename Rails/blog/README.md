@@ -21,7 +21,8 @@
 
 	1.  What are we building?
 
-		We are building a personal site.  A place to showcase our work, write Articles (discuss tricks, ideas, and our current trends), and have people contact us
+		We are building a personal site.  A place to showcase our work, write Articles (discuss tricks, ideas, and
+		our current trends), and have people contact us
 
 	2. Who are we building it for?
 

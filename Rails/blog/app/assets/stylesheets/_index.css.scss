@@ -1,0 +1,291 @@
+.sub_title1 {
+	width: 30%;
+	margin: auto;
+	text-decoration: none;
+    color: $dark;
+	text-align: center;
+	padding: 1em;
+}
+
+.sub_title2 {
+	width: 30%;
+    margin: auto;
+    text-decoration: none;
+    color: $dark;
+    text-align: center;
+    padding: 1em;
+}
+
+.list_articles {
+	
+	width: 30%;
+	margin: 0em 4em 0em;
+    float: right;
+    background-color: $test;
+    p {
+    	width:100%;
+    	text-align:left;
+    	margin-top: 0em;
+    	margin-left: 1em;
+    }
+}
+
+.list_projects{
+	width: 30%;
+	margin: 0em 4em 0em;
+	float: right;
+background-color: $test;
+
+	p {
+    	width:100%;
+    	text-align:left;
+    	margin-top: 0em;
+    	margin-left: 1em;
+    }
+}
+
+.article_index_title{
+	width: 90%;
+	text-align: left;
+	padding-bottom: 0.3em;
+	margin: 1em 1em 0em;
+
+			text-decoration: none;
+			color: $dark;
+			font-weight: 700;
+			letter-spacing: 1.5;
+			&:hover{
+				color: $lightblue;
+			}
+}
+
+.project_index_title{
+	width: 90%;
+	text-align: left;
+	padding-bottom: 0.3em;
+	margin: 1em 1em 0em;
+	
+			text-decoration: none;
+			color: $dark;
+			font-weight: 700;
+			letter-spacing: 1.5;
+			&:hover{
+				color: $lightblue;
+			}
+}
+
+.post_listing {
+	width:100%;
+	margin-bottom: 1em;
+}
+.separate {
+	width: 2em;
+	color:$dark;
+}
+
+/******Index Specific*****/
+
+.sub_title1 {
+	width: 30%;
+	margin: auto;
+	text-decoration: none;
+    color: $dark;
+	text-align: center;
+	padding: 1em;
+}
+
+.sub_title2 {
+	width: 30%;
+    margin: auto;
+    text-decoration: none;
+    color: $dark;
+    text-align: center;
+    padding: 1em;
+}
+
+.list_articles {
+	
+	width: 30%;
+	margin: 0em 4em 0em;
+    float: right;
+    background-color: $test;
+    p {
+    	width:100%;
+    	text-align:left;
+    	margin-top: 0em;
+    	margin-left: 1em;
+    }
+}
+
+.list_projects{
+	width: 30%;
+	margin: 0em 3em 0em 1em;
+	float: right;
+background-color: $test;
+
+	p {
+    	width:100%;
+    	text-align:left;
+    	margin-top: 0em;
+    	margin-left: 1em;
+    }
+}
+
+.article_index_title{
+	width: 90%;
+	text-align: left;
+	padding-bottom: 0.3em;
+	margin: 1em 1em 0em;
+
+			text-decoration: none;
+			color: $dark;
+			font-weight: 700;
+			letter-spacing: 1.5;
+			&:hover{
+				color: $lightblue;
+			}
+}
+
+.project_index_title{
+	width: 90%;
+	text-align: left;
+	padding-bottom: 0.3em;
+	margin: 1em 1em 0em;
+	
+			text-decoration: none;
+			color: $dark;
+			font-weight: 700;
+			letter-spacing: 1.5;
+			&:hover{
+				color: $lightblue;
+			}
+}
+
+.post_listing {
+	width:100%;
+	margin-bottom: 1em;
+}
+.separate {
+	width: 2em;
+	color:$dark;
+}
+
+/*****Index Break for Tablets and Phones*****/
+@media (max-width:999px) {
+
+
+.sub_title1 {
+	width: 100%;
+	padding: 0.3em;
+	border: 2px solid $dark;
+}
+
+.sub_title2 {
+	width: 100%;
+    padding: 0.3em;
+    border: 2px solid $dark;
+}
+
+.list_articles {
+	
+	width: 100%;
+	margin: 7em 1em 0em;
+    float: none;
+    p {
+    	text-align:center;
+    }
+}
+
+.list_projects{
+	width: 100%;
+	margin: 1em 1em 0em 1em;
+	float: none;
+	
+	p {
+    	text-align:center;
+    }
+}
+
+.article_index_title{
+	width: 20%;
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+.project_index_title{
+	width: 20%;
+	text-align: center;
+	margin: 1em 1em 0em;
+}
+
+.post_listing {
+	width:100%;
+	margin-bottom:0.2em;
+	margin-top: 2em;
+}
+.separate {
+	clear: both;
+}
+.disappear {
+	display: none;}
+
+.center{ text-align: center}
+}
+
+@media (max-width:700px) {
+
+
+.sub_title1 {
+	width: 100%;
+	padding: 0.3em;
+	border: 2px solid $dark;
+}
+
+.sub_title2 {
+	width: 100%;
+    padding: 0.3em;
+    border: 2px solid $dark;
+}
+
+.list_articles {
+	
+	width: 100%;
+	margin: 7em 1em 0em;
+    float: none;
+    p {
+    	text-align:center;
+    }
+}
+
+.list_projects{
+	width: 100%;
+	margin: 1em 1em 0em 1em;
+	float: none;
+	p {
+    	text-align:center;
+    }
+}
+
+.article_index_title{
+	width: 20%;
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+.project_index_title{
+	width: 20%;
+	text-align: center;
+	margin: 1em 1em 0em;
+}
+
+.post_listing {
+	width:100%;
+	margin-bottom:0.2em;
+	margin-top: 2em;
+}
+.separate {
+	clear: both;
+}
+
+.center{ text-align: center}
+}

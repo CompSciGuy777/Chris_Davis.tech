@@ -1,19 +1,23 @@
-@import 'normalize';
+/******Imports and Variables*****/
 
+@import 'normalize';
 $disabled: #C0C0C0;
 $grey: #999999;
 $blue: #66ccff;
 $white: #FFFFFF;
 $test: transparent;
+$test2: transparent;
 $navback: #677f88;
 $dark:  #394043;
 $border: #2f383b;
 $lightblue: #b1e1f3;
 $headerskew: -3deg;
 
-/******Navigation*****/
-/******CSS for Desktop Displays*****/
-@media (min-width: 1000px) {
+/******Whole Page Stylings at all Sizes*****/
+
+/******Whole Page Stylings at all Sizes*****/
+
+/******Whole Page Stylings at all Sizes*****/
 * { box-sizing: border-box; 
 	font-family: 'Ubuntu', sans-serif;
 }
@@ -23,7 +27,68 @@ html, body {
     overflow-x: hidden;
 }
 
+.wrapper {
+	width: 70%;
+	margin: auto;
+	margin-top: 14%;
+}
 
+.separate {
+	width: 2em;
+	color:$dark;
+}
+
+.separate_posts {
+	width: 2em;
+	margin-bottom: 3em;
+	color:$dark;
+}
+
+/******* Pagination *******/
+.pagination:before, .pagination:after {
+	content: " ";
+	display: table;
+}
+
+.pagination:after {
+	clear:both;
+}
+
+.pagination {
+	text-align:center;
+	margin-bottom: 3em;
+		a, .previous_page, .current, .next_page {
+			text-decoration: none;
+			padding: 0.2em .2em;
+			margin: 0 .2em;
+			border-radius: 10%;
+			line-height: 20px;
+			background-color: $white;
+			font-weight: 700;
+			font-style: normal;
+			color: $dark;
+			&:hover{
+				background: $lightblue;
+				color: $white;
+			}
+		}
+}
+
+.current {
+	background: $lightblue;
+	color: $white;
+}
+
+.disabled {
+	color: $disabled;
+	&:hover {
+		color: $disabled;
+		background-color:$white;
+	}
+}
+
+
+/******Clearfix*****/
 .clearfix:before, .clearfix:after{
 	content: " ";
 	display: table;
@@ -32,6 +97,19 @@ html, body {
 .clearfix{
 	float: none;
 }
+
+
+/******Logo*****/
+.img_main{
+	width:100%;
+	height:auto;
+	background-color: $blue;
+	color:transparent;
+}
+
+/******Navigation*****/
+
+
 
 #logo{
 	width:20%;
@@ -44,15 +122,6 @@ html, body {
 	/*This is just for testing and visualization*/
 	background-color: $blue;
 	height: auto;
-}
-
-.img_main{
-	width:100%;
-	height:auto;
-	background-color: $blue;
-	
-
-
 }
 
 #main-navigation .skew:before {
@@ -73,18 +142,12 @@ html, body {
   transform: skewY($headerskew);
     -webkit-backface-visibility: hidden;
 }
-
  .skew {
   
   padding: 0 20px;
   margin-left: auto;
   margin-right: auto;
 } 
-
-img {
-	vertical-align: none;
-
-}
 
 
 #main-navigation {
@@ -161,11 +224,20 @@ img {
 	letter-spacing: 0.25em;
 	a{color: $border;}
 }
+/******CSS for Tablet&Phone Displays*****/
 
-}
+
+/******CSS for Tablet&Phone Displays*****/
+
+
 /******CSS for Tablet&Phone Displays*****/
 @media (min-width:640px) and (max-width:1000px) {
 * { box-sizing: border-box;}
+
+.wrapper {
+	width: 100%;
+	margin: auto;
+}
 
 .highlight:hover{
 		color: $lightblue;
@@ -173,106 +245,35 @@ img {
 		}
 
 
-.clearfix:before, .clearfix:after{
-	content: " ";
-	display: table;
-}
 
-.clearfix{
-	float: none;
-}
 
 #logo{
-	width:2%;
-	height:auto;
-	padding: 0%;
-	float:left;
-	margin: none;
-	padding:2em;
-	/*This is just for testing and visualization*/
-	background-color: $blue;
-	height: auto;
 	display: none;
 }
 
-.img_main{
-	width:100%;
-	height:auto;
-	background-color: $blue;
-	color:transparent;
-	
 
-
-}
 
 #main-navigation .skew:before {
-  content: '';
-  position: absolute;
-  left: 0%;
   bottom: -75%;
-  overflow: visible;
-  border: 2px solid $grey;
-  width: 110%;
   height: 150px;
-  background: $blue;
-  z-index: -1;
-  -webkit-transform: skewY($headerskew);
-  -moz-transform: skewY($headerskew);
-  -ms-transform: skewY($headerskew);
-  -o-transform: skewY($headerskew);
-  transform: skewY($headerskew);
-    -webkit-backface-visibility: hidden;
-}
-
- .skew {
-  
-  padding: 0 20px;
-  margin-left: auto;
-  margin-right: auto;
-} 
-
-img {
-	vertical-align: none;
-
 }
 
 
-#main-navigation {
-	margin-top: 1em;
-	padding: 2em 5%;
-	font-weight: 700;
-	text-transform: uppercase;
-	text-decoration: none;
-	font-size: .8em;
-	width:100%;
-	/*This is just for testing and visualization*/
-	background-color:transparent;
-	z-index: 1;
-	position:relative;
-}
 
 .name{
-	float:left;
-	padding: 0.75em;
+
 	margin: 1em;
 	font-size: 1em;
-	text-decoration: none;
-	border: 2px solid $grey;
 	margin-top: -1em;
 	margin-left: 1em;
 	color: $dark;
 }
 
 .nav_link{
-	float:right;
-	text-decoration: none;
 	font-size:0.5rem;
 	font-weight: 700;
 	padding: 2%;
 	margin-top: -1em;
-	border: 2px solid $grey;
-	border-radius: 25%;
-	margin-left: 1%;
 	color: $dark;
 	
 }
@@ -282,140 +283,51 @@ img {
 		background-color:$dark;
 	}
 
-#sidebar {
-	position:absolute;
-	width:15%;
-	height:100%;
-	background-color: white;
-	border-right: 2px solid $grey;
-	margin: -1%;
-	display:none;
-}
-#copyright {
-	position: absolute;
-	bottom: 0;
-	left: 4%;
-	text-align: center;
-	color: $border;
-	margin-left: 15%;
+
+.disappear_small{
 	display:none;
 }
 
-.social_media {
-	position: absolute;
-	bottom: 2%;
-	left: 4%;
-	text-align: center;
-	color: $border;
-	margin-left: 15%;
-	display:none;
-}
 }
 
 /******CSS for Phone Displays*****/
+
+/******CSS for Phone Displays*****/
+
+/******CSS for Phone Displays*****/
 @media screen and (max-width:640px) {
-* { box-sizing: border-box;}
 
-.clearfix:before, .clearfix:after{
-	content: " ";
-	display: table;
+.wrapper {
+	width: 100%;
+	margin:auto;
 }
 
-.clearfix{
-	float: none;
-}
+
 
 #logo{
-	width:2%;
-	height:auto;
-	padding: 0%;
-	float:left;
-	margin: none;
-	padding:2em;
-	/*This is just for testing and visualization*/
-	background-color: $blue;
-	height: auto;
 	display: none;
 }
 
-.img_main{
-	width:100%;
-	height:auto;
-	background-color: $blue;
-	color:transparent;
-	
-
-
-}
 
 #main-navigation .skew:before {
-  content: '';
-  position: absolute;
-  left: 0%;
   bottom: -75%;
-  overflow: visible;
-  border: 2px solid $grey;
-  width: 110%;
   height: 150px;
-  background: $blue;
-  z-index: -1;
-  -webkit-transform: skewY($headerskew);
-  -moz-transform: skewY($headerskew);
-  -ms-transform: skewY($headerskew);
-  -o-transform: skewY($headerskew);
-  transform: skewY($headerskew);
-    -webkit-backface-visibility: hidden;
-}
-
- .skew {
-  
-  padding: 0 20px;
-  margin-left: auto;
-  margin-right: auto;
-} 
-
-img {
-	vertical-align: none;
-
 }
 
 
-#main-navigation {
-	margin-top: 1em;
-	padding: 2em 5%;
-	font-weight: 700;
-	text-transform: uppercase;
-	text-decoration: none;
-	font-size: .8em;
-	width:100%;
-	/*This is just for testing and visualization*/
-	background-color:transparent;
-	z-index: 1;
-	position:relative;
-}
 
 .name{
-	float:left;
 	padding: 0.70em;
-	margin: 1em;
 	font-size: 1em;
-	text-decoration: none;
-	border: 2px solid $grey;
 	margin-top: -1em;
 	margin-left: 1em;
 	color: $dark;
 }
 
 .nav_link{
-	float:right;
-	text-decoration: none;
 	font-size:0.6rem;
 	font-weight: 700;
 	padding: 2%;
-	margin-top: -1em;
-	border: 2px solid $grey;
-	border-radius: 25%;
-	margin-left: 1%;
 	color: $dark;
 	
 }
@@ -427,38 +339,13 @@ img {
 	}
 
 
-#sidebar {
-	position:absolute;
-	width:15%;
-	height:100%;
-	background-color: white;
-	border-right: 2px solid $grey;
-	margin: -1%;
-	display:none;
-}
-#copyright {
-	position: absolute;
-	bottom: 0;
-	left: 4%;
-	text-align: center;
-	color: $border;
-	margin-left: 15%;
-	display:none;
-}
-
-.social_media {
-	position: absolute;
-	bottom: 2%;
-	left: 4%;
-	text-align: center;
-	color: $border;
-	margin-left: 15%;
-	display:none;
-}
-
-.disappear {
+.disappear_small {
 	display:none;
 }
 
 
 }
+
+@import 'index';
+@import 'about';
+@import 'posts';

@@ -1,0 +1,53 @@
+
+/******About Specific*****/
+.img_box {
+	width: 45%;
+	margin: auto;
+	padding: 2%;
+	margin-left: 40%;
+}
+
+#about_img {
+	width:100%;
+	height: auto;
+}
+
+.separate {
+	width: 2em;
+	color:$dark;
+}
+
+.sub_title {
+	text-align: center;
+}
+.about_text {
+	margin: 0% 14% 0% 41%;
+	padding: 1%;
+
+}
+
+@media (min-width: 640px) and (max-width: 1000px){
+
+.img_box {
+	width:40%;
+	padding: 5%;
+}
+
+.about_text {
+	margin: 2% 5% 5% 14%;
+}
+}
+
+
+/*****About Break for Tablets and Phones*****/
+@media (max-width:639px) {
+
+.img_box {
+	margin: auto;
+	padding: 5%;
+}
+
+.about_text {
+	margin: 5%;
+}
+}

@@ -8,20 +8,23 @@
 			</ul>
 		<% end %>
 
-
+<div class="form">
+	<div class="input">
 	<%= f.label :title %><br>
 	<%=	f.text_field :title %>
+	</div>
 
 	<br>
 	<br>
-
+	
+	<div class="input">
 	<%= f.label :content, "Write the article here" %><br>
-	<%= f.text_area :content %>
+	<%= f.text_area :content, class:'text_area' %>
+	</div>
 
 	<br>
 	<br>
-
-	<%= f.submit %>
-
+	<div><%= f.submit "Create Post", class: 'form_button highlight'%></div>
+</div>
 	
 <% end %>

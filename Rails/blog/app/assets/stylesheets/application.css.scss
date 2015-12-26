@@ -33,6 +33,12 @@ html, body {
 	margin-top: 14%;
 }
 
+.skinny_wrapper {
+	width: 60%;
+	margin: auto;
+	margin-top: 10%;
+}
+
 .separate {
 	width: 2em;
 	color:$dark;
@@ -86,6 +92,8 @@ html, body {
 		background-color:$white;
 	}
 }
+
+
 
 
 /******Clearfix*****/
@@ -224,6 +232,33 @@ html, body {
 	letter-spacing: 0.25em;
 	a{color: $border;}
 }
+
+/******* Form Stylings *******/
+.form {
+	width: 100%;
+	margin:auto;
+	margin-top: 11%;
+	margin-left: 20%;
+}
+
+.text_area {
+	width:80%;
+	height:200px;
+}
+
+.form_button {
+	width: 20%;
+	padding: 1em;
+	text-align: center;
+	border: 2px solid $dark;
+	text-decoration:none;
+}
+
+input { 
+	width: 80%;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
 /******CSS for Tablet&Phone Displays*****/
 
 
@@ -237,6 +272,12 @@ html, body {
 .wrapper {
 	width: 100%;
 	margin: auto;
+}
+
+.skinny_wrapper {
+	width: 90%;
+	margin: auto;
+	margin-top: 10%;
 }
 
 .highlight:hover{
@@ -288,7 +329,12 @@ html, body {
 	display:none;
 }
 
+/******* Form Stylings *******/
+.form {
+	margin-top: 7%;
 }
+}
+
 
 /******CSS for Phone Displays*****/
 
@@ -302,7 +348,11 @@ html, body {
 	margin:auto;
 }
 
-
+.skinny_wrapper {
+	width: 90%;
+	margin: auto;
+	margin-top: 15%;
+}
 
 #logo{
 	display: none;
@@ -343,6 +393,16 @@ html, body {
 	display:none;
 }
 
+/******* Form Stylings *******/
+.form {
+	width: 100%;
+}
+
+input { 
+	width: 100%;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
 
 }
 

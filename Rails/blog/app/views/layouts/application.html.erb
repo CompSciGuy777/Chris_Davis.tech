@@ -12,12 +12,12 @@
 	<header id="main-navigation">
 		<div class="skew">
 		<div id="logo"><%= image_tag 'Lion_Logo.png', alt: 'Lion', class: 'img_main'%></div>
-			<a href="index.html" class="name highlight_black">Chris Davis</a>
-				
+			<%= link_to "Chris Davis", root_path, class: "name highlight_black" %>
+
 				<nav>
 					<a href="contact.html" class="nav_link highlight_black">Contact</a>
 					<a href="about.html" class="nav_link highlight_black">About</a>
-					<a href="articles.html" class="nav_link disappear_small highlight_black">Articles</a>
+					<%= link_to "Articles", posts_path , class: "nav_link disappear_small highlight_black" %>
 					<a href="projects.html" class="nav_link disappear_small highlight_black">Projects</a>
 				</nav>
 	    </div>
@@ -26,9 +26,9 @@
 
 <div id="sidebar" class="disappear_small">
 		<div class="social_media disappear_small">
-		<a href=""><i class="fa fa-facebook"></i></a>
-		<a href=""><i class="fa fa-github"></i></a>
-		<a href=""><i class="fa fa-twitter"></i></a>
+		<a href="https://www.facebook.com/christopher.davis777" target="_blank"><i class="fa fa-facebook"></i></a>
+		<a href="https://github.com/WhiteLion777" target="_blank"><i class="fa fa-github"></i></a>
+		<a href="https://twitter.com/Chris_Davis7777" target="_blank"><i class="fa fa-twitter"></i></a>
 		</div>
 		<p id="copyright" class="disappear_small">&copy;2015 Chris Davis</p>
 	</div>

@@ -1,8 +1,17 @@
-<%= @post.title %>
-<br>
-<%= @post.content %>
+<div class="skinny_wrapper">
 
+<div class="sub_title_post">
+<div class="date"><%= @post.created_at.strftime("%A %B %d, %Y")%></div>
+<%= @post.title %>
+</div>
+
+<br>
+
+<div class="body">
+<%= @post.content %>
+</div>
 <br>
 <br>
 
 <%=link_to "Edit", edit_post_path(@post) %><%= link_to "delete", post_path(@post), method: :delete, data: {confirm: "Are you sure you want to delete this post?"} %>
+</div>

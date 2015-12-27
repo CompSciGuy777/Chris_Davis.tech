@@ -7,13 +7,13 @@
 				<% @posts.each do |post|  %>
 				<div class="post_listing center">
 					<h3><%= link_to post.title, post, class: 'article_index_title'%></h3>
-					<p><%= post.created_at.strftime("%A, %b %d") %></p>
+					<p><%= post.created_at.strftime("%A %B %d, %Y") %></p>
 					<hr class="separate">
 				</div>
 				<%end%>	
 		</div>
 			<div class="list_projects clearfix">
-		<h1 class="center"><a href="projects.html" class="sub_title2 highlight">Projects</a></h1>
+		<h1 class="center"><%= link_to "Projects", posts_path, class: "sub_title1 highlight"%></h1>
 		<hr class="separate disappear">
 				<div class="post_listing center">
 					<h3><a href="#" class="project_index_title">Pure Readit</a></h3>

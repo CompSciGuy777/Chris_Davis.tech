@@ -1,0 +1,1861 @@
+/******Imports and Variables*****/
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 9, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_normalize.css.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 19, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_normalize.css.scss */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 33, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_normalize.css.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 54, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_normalize.css.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 67, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_normalize.css.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+/* line 77, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_normalize.css.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 89, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_normalize.css.scss */
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 97, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_normalize.css.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 109, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_normalize.css.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 117, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_normalize.css.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 126, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_normalize.css.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 135, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_normalize.css.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 144, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_normalize.css.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 153, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_normalize.css.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 161, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_normalize.css.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 169, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_normalize.css.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 173, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_normalize.css.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 184, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_normalize.css.scss */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 192, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_normalize.css.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 203, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_normalize.css.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 211, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_normalize.css.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 221, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_normalize.css.scss */
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 229, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_normalize.css.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 252, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_normalize.css.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 266, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_normalize.css.scss */
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 277, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_normalize.css.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 290, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_normalize.css.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 302, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_normalize.css.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 311, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_normalize.css.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 322, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_normalize.css.scss */
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 334, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_normalize.css.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 346, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_normalize.css.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 357, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_normalize.css.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 370, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_normalize.css.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 379, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_normalize.css.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 390, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_normalize.css.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 399, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_normalize.css.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 408, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_normalize.css.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 419, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_normalize.css.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 424, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_normalize.css.scss */
+td,
+th {
+  padding: 0;
+}
+
+/******Whole Page Stylings at all Sizes*****/
+/******Whole Page Stylings at all Sizes*****/
+/******Whole Page Stylings at all Sizes*****/
+/* line 22, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/application.css.scss */
+* {
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/* line 26, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/application.css.scss */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* line 31, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/application.css.scss */
+.wrapper {
+  width: 80%;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: inline-block;
+}
+
+/* line 39, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/application.css.scss */
+.skinny_wrapper {
+  width: 70%;
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  display: inline-block;
+}
+
+/* line 47, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/application.css.scss */
+.separate {
+  width: 2em;
+  color: #394043;
+}
+
+/* line 52, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/application.css.scss */
+.separate_posts {
+  width: 2em;
+  margin-bottom: 3em;
+  color: #394043;
+}
+
+/******* Pagination *******/
+/* line 59, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/application.css.scss */
+.pagination:before, .pagination:after {
+  content: " ";
+  display: table;
+}
+
+/* line 64, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/application.css.scss */
+.pagination:after {
+  clear: both;
+}
+
+/* line 68, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/application.css.scss */
+.pagination {
+  text-align: center;
+  margin-bottom: 3em;
+}
+/* line 71, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/application.css.scss */
+.pagination a, .pagination .previous_page, .pagination .current, .pagination .next_page {
+  text-decoration: none;
+  padding: 0.2em .2em;
+  margin: 0 .2em;
+  border-radius: 10%;
+  line-height: 20px;
+  background-color: #FFFFFF;
+  font-weight: 700;
+  font-style: normal;
+  color: #394043;
+}
+/* line 81, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/application.css.scss */
+.pagination a:hover, .pagination .previous_page:hover, .pagination .current:hover, .pagination .next_page:hover {
+  background: #b1e1f3;
+  color: #FFFFFF;
+}
+
+/* line 88, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/application.css.scss */
+.current {
+  background: #b1e1f3;
+  color: #FFFFFF;
+}
+
+/* line 93, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/application.css.scss */
+.disabled {
+  color: #C0C0C0;
+}
+/* line 95, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/application.css.scss */
+.disabled:hover {
+  color: #C0C0C0;
+  background-color: #FFFFFF;
+}
+
+/******Clearfix*****/
+/* line 105, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/application.css.scss */
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+
+/* line 110, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/application.css.scss */
+.clearfix {
+  float: none;
+}
+
+/******Logo*****/
+/* line 116, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/application.css.scss */
+.img_main {
+  width: 100%;
+  height: auto;
+  background-color: #66ccff;
+  color: transparent;
+}
+
+/******Navigation*****/
+/* line 127, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/application.css.scss */
+#logo {
+  width: 20%;
+  height: auto;
+  border: 2px solid #999999;
+  padding: 2%;
+  float: left;
+  margin: -1em 1% 1% -1em;
+  padding: 2em;
+  /*This is just for testing and visualization*/
+  background-color: #66ccff;
+  height: auto;
+}
+
+/* line 140, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/application.css.scss */
+#main-navigation .skew:before {
+  content: '';
+  position: absolute;
+  left: 0%;
+  bottom: -96%;
+  overflow: visible;
+  border: 2px solid #999999;
+  width: 110%;
+  height: 180px;
+  background: #66ccff;
+  z-index: -1;
+  -webkit-transform: skewY(-3deg);
+  -moz-transform: skewY(-3deg);
+  -ms-transform: skewY(-3deg);
+  -o-transform: skewY(-3deg);
+  transform: skewY(-3deg);
+  -webkit-backface-visibility: hidden;
+}
+
+/* line 158, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/application.css.scss */
+.skew {
+  padding: 0 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 166, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/application.css.scss */
+#main-navigation {
+  margin-top: 1em;
+  padding: 2em 5%;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: .8em;
+  width: 100%;
+  /*This is just for testing and visualization*/
+  background-color: transparent;
+  z-index: 1;
+  position: relative;
+}
+
+/* line 180, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/application.css.scss */
+.name {
+  float: left;
+  padding: 0.75em;
+  margin: 1em;
+  font-size: 1.5em;
+  text-decoration: none;
+  border: 2px solid #999999;
+  margin-top: -0.6em;
+  margin-left: 2em;
+  color: white;
+}
+
+/* line 192, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/application.css.scss */
+.nav_link {
+  float: right;
+  text-decoration: none;
+  font-size: 0.85em;
+  padding: 0.75em;
+  margin-top: -1em;
+  border: 2px solid #999999;
+  border-radius: 25%;
+  margin-left: 1%;
+  color: white;
+}
+
+/* line 205, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/application.css.scss */
+.highlight_black:hover {
+  color: #b1e1f3;
+  background-color: #394043;
+}
+
+/* line 209, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/application.css.scss */
+a.highlight:hover {
+  color: #b1e1f3;
+}
+
+/* line 213, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/application.css.scss */
+#sidebar {
+  position: relative;
+  width: 100%;
+  height: 15%;
+  background-color: white;
+  border-top: 2px solid #999999;
+  margin: -1%;
+}
+
+/* line 221, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/application.css.scss */
+#copyright {
+  position: relative;
+  float: left;
+  text-align: center;
+  color: #2f383b;
+  margin-left: 15%;
+}
+
+/* line 229, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/application.css.scss */
+.social_media {
+  position: relative;
+  float: right;
+  text-align: center;
+  color: #2f383b;
+  margin-right: 15%;
+  margin-top: 1em;
+  letter-spacing: 0.25em;
+}
+/* line 237, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/application.css.scss */
+.social_media a {
+  color: #2f383b;
+}
+
+/******* Form Stylings *******/
+/* line 241, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/application.css.scss */
+.form {
+  width: 100%;
+  margin: auto;
+  margin-top: 11%;
+  margin-left: 20%;
+}
+
+/* line 248, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/application.css.scss */
+.text_area {
+  width: 80%;
+  height: 200px;
+}
+
+/* line 253, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/application.css.scss */
+.form_button {
+  width: 20%;
+  padding: 1em;
+  text-align: center;
+  border: 2px solid #394043;
+  text-decoration: none;
+}
+
+/* line 262, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/application.css.scss */
+input {
+  width: 80%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+/******CSS for Tablet&Phone Displays*****/
+/******CSS for Tablet&Phone Displays*****/
+/******CSS for Tablet&Phone Displays*****/
+@media (min-width: 640px) and (max-width: 1000px) {
+  /* line 275, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/application.css.scss */
+  * {
+    box-sizing: border-box;
+  }
+
+  /* line 277, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/application.css.scss */
+  .wrapper {
+    width: 100%;
+    margin: auto;
+  }
+
+  /* line 282, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/application.css.scss */
+  .skinny_wrapper {
+    width: 90%;
+    margin: auto;
+    margin-top: 10%;
+  }
+
+  /* line 288, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/application.css.scss */
+  .highlight:hover {
+    color: #b1e1f3;
+    background-color: transparent;
+  }
+
+  /* line 296, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/application.css.scss */
+  #logo {
+    display: none;
+  }
+
+  /* line 302, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/application.css.scss */
+  #main-navigation .skew:before {
+    bottom: -75%;
+    height: 150px;
+  }
+
+  /* line 309, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/application.css.scss */
+  .name {
+    margin: 1em;
+    font-size: 1em;
+    margin-top: -1em;
+    margin-left: 1em;
+    color: #394043;
+  }
+
+  /* line 318, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/application.css.scss */
+  .nav_link {
+    font-size: 0.5rem;
+    font-weight: 700;
+    padding: 2%;
+    margin-top: -1em;
+    color: #394043;
+  }
+
+  /* line 327, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/application.css.scss */
+  .highlight_black:hover, .highlight:hover {
+    color: #b1e1f3;
+    background-color: #394043;
+  }
+
+  /* line 333, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/application.css.scss */
+  .disappear_small {
+    display: none;
+  }
+
+  /******* Form Stylings *******/
+  /* line 338, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/application.css.scss */
+  .form {
+    margin-top: 7%;
+  }
+}
+/******CSS for Phone Displays*****/
+/******CSS for Phone Displays*****/
+/******CSS for Phone Displays*****/
+@media screen and (max-width: 640px) {
+  /* line 351, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/application.css.scss */
+  .wrapper {
+    width: 100%;
+    margin: auto;
+  }
+
+  /* line 356, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/application.css.scss */
+  .skinny_wrapper {
+    width: 90%;
+    margin: auto;
+    margin-top: 15%;
+  }
+
+  /* line 362, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/application.css.scss */
+  #logo {
+    display: none;
+  }
+
+  /* line 367, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/application.css.scss */
+  #main-navigation .skew:before {
+    bottom: -75%;
+    height: 150px;
+  }
+
+  /* line 374, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/application.css.scss */
+  .name {
+    padding: 0.70em;
+    font-size: 1em;
+    margin-top: -1em;
+    margin-left: 1em;
+    color: #394043;
+  }
+
+  /* line 382, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/application.css.scss */
+  .nav_link {
+    font-size: 0.6rem;
+    font-weight: 700;
+    padding: 2%;
+    color: #394043;
+  }
+
+  /* line 391, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/application.css.scss */
+  .highlight_black:hover, .highlight:hover {
+    color: #b1e1f3;
+    background-color: #394043;
+  }
+
+  /* line 397, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/application.css.scss */
+  .disappear_small {
+    display: none;
+  }
+
+  /******* Form Stylings *******/
+  /* line 402, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/application.css.scss */
+  .form {
+    width: 100%;
+  }
+
+  /* line 406, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/application.css.scss */
+  input {
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+}
+/* line 1, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_index.css.scss */
+.sub_title1 {
+  width: 30%;
+  margin: auto;
+  text-decoration: none;
+  color: #394043;
+  text-align: center;
+  padding: 1em;
+}
+
+/* line 10, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_index.css.scss */
+.sub_title2 {
+  width: 30%;
+  margin: auto;
+  text-decoration: none;
+  color: #394043;
+  text-align: center;
+  padding: 1em;
+}
+
+/* line 19, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_index.css.scss */
+.list_articles {
+  width: 30%;
+  margin: 0em 4em 0em;
+  float: right;
+  background-color: transparent;
+}
+/* line 25, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_index.css.scss */
+.list_articles p {
+  width: 100%;
+  text-align: left;
+  margin-top: 0em;
+  margin-left: 1em;
+}
+
+/* line 33, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_index.css.scss */
+.list_projects {
+  width: 30%;
+  margin: 0em 4em 0em;
+  float: right;
+  background-color: transparent;
+}
+/* line 39, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_index.css.scss */
+.list_projects p {
+  width: 100%;
+  text-align: left;
+  margin-top: 0em;
+  margin-left: 1em;
+}
+
+/* line 47, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_index.css.scss */
+.article_index_title {
+  width: 90%;
+  text-align: left;
+  padding-bottom: 0.3em;
+  margin: 1em 1em 0em;
+  text-decoration: none;
+  color: #394043;
+  font-weight: 700;
+  letter-spacing: 1.5;
+}
+/* line 57, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_index.css.scss */
+.article_index_title:hover {
+  color: #b1e1f3;
+}
+
+/* line 62, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_index.css.scss */
+.project_index_title {
+  width: 90%;
+  text-align: left;
+  padding-bottom: 0.3em;
+  margin: 1em 1em 0em;
+  text-decoration: none;
+  color: #394043;
+  font-weight: 700;
+  letter-spacing: 1.5;
+}
+/* line 72, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_index.css.scss */
+.project_index_title:hover {
+  color: #b1e1f3;
+}
+
+/* line 77, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_index.css.scss */
+.post_listing {
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+/* line 81, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_index.css.scss */
+.separate {
+  width: 2em;
+  color: #394043;
+}
+
+/******Index Specific*****/
+/* line 88, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_index.css.scss */
+.sub_title1 {
+  width: 30%;
+  margin: auto;
+  text-decoration: none;
+  color: #394043;
+  text-align: center;
+  padding: 1em;
+}
+
+/* line 97, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_index.css.scss */
+.sub_title2 {
+  width: 30%;
+  margin: auto;
+  text-decoration: none;
+  color: #394043;
+  text-align: center;
+  padding: 1em;
+}
+
+/* line 106, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_index.css.scss */
+.list_articles {
+  width: 30%;
+  margin: 0em 4em 0em;
+  float: right;
+  background-color: transparent;
+}
+/* line 112, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_index.css.scss */
+.list_articles p {
+  width: 100%;
+  text-align: left;
+  margin-top: 0em;
+  margin-left: 1em;
+}
+
+/* line 120, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_index.css.scss */
+.list_projects {
+  width: 30%;
+  margin: 0em 3em 0em 1em;
+  float: right;
+  background-color: transparent;
+}
+/* line 126, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_index.css.scss */
+.list_projects p {
+  width: 100%;
+  text-align: left;
+  margin-top: 0em;
+  margin-left: 1em;
+}
+
+/* line 134, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_index.css.scss */
+.article_index_title {
+  width: 90%;
+  text-align: left;
+  padding-bottom: 0.3em;
+  margin: 1em 1em 0em;
+  text-decoration: none;
+  color: #394043;
+  font-weight: 700;
+  letter-spacing: 1.5;
+}
+/* line 144, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_index.css.scss */
+.article_index_title:hover {
+  color: #b1e1f3;
+}
+
+/* line 149, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_index.css.scss */
+.project_index_title {
+  width: 90%;
+  text-align: left;
+  padding-bottom: 0.3em;
+  margin: 1em 1em 0em;
+  text-decoration: none;
+  color: #394043;
+  font-weight: 700;
+  letter-spacing: 1.5;
+}
+/* line 159, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_index.css.scss */
+.project_index_title:hover {
+  color: #b1e1f3;
+}
+
+/* line 164, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_index.css.scss */
+.post_listing {
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+/* line 168, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_index.css.scss */
+.separate {
+  width: 2em;
+  color: #394043;
+}
+
+/*****Index Break for Tablets and Phones*****/
+@media (max-width: 999px) {
+  /* line 177, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_index.css.scss */
+  .sub_title1 {
+    width: 100%;
+    padding: 0.3em;
+    border: 2px solid #394043;
+  }
+
+  /* line 183, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_index.css.scss */
+  .sub_title2 {
+    width: 100%;
+    padding: 0.3em;
+    border: 2px solid #394043;
+  }
+
+  /* line 189, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_index.css.scss */
+  .list_articles {
+    width: 100%;
+    margin: 7em 1em 0em;
+    float: none;
+  }
+  /* line 194, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_index.css.scss */
+  .list_articles p {
+    text-align: center;
+  }
+
+  /* line 199, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_index.css.scss */
+  .list_projects {
+    width: 100%;
+    margin: 1em 1em 0em 1em;
+    float: none;
+  }
+  /* line 204, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_index.css.scss */
+  .list_projects p {
+    text-align: center;
+  }
+
+  /* line 209, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_index.css.scss */
+  .article_index_title {
+    width: 20%;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+
+  /* line 215, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_index.css.scss */
+  .project_index_title {
+    width: 20%;
+    text-align: center;
+    margin: 1em 1em 0em;
+  }
+
+  /* line 221, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_index.css.scss */
+  .post_listing {
+    width: 100%;
+    margin-bottom: 0.2em;
+    margin-top: 2em;
+  }
+
+  /* line 226, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_index.css.scss */
+  .separate {
+    clear: both;
+  }
+
+  /* line 229, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_index.css.scss */
+  .disappear {
+    display: none;
+  }
+
+  /* line 232, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_index.css.scss */
+  .center {
+    text-align: center;
+  }
+}
+@media (max-width: 700px) {
+  /* line 238, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_index.css.scss */
+  .sub_title1 {
+    width: 100%;
+    padding: 0.3em;
+    border: 2px solid #394043;
+  }
+
+  /* line 244, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_index.css.scss */
+  .sub_title2 {
+    width: 100%;
+    padding: 0.3em;
+    border: 2px solid #394043;
+  }
+
+  /* line 250, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_index.css.scss */
+  .list_articles {
+    width: 100%;
+    margin: 7em 1em 0em;
+    float: none;
+  }
+  /* line 255, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_index.css.scss */
+  .list_articles p {
+    text-align: center;
+  }
+
+  /* line 260, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_index.css.scss */
+  .list_projects {
+    width: 100%;
+    margin: 1em 1em 0em 1em;
+    float: none;
+  }
+  /* line 264, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_index.css.scss */
+  .list_projects p {
+    text-align: center;
+  }
+
+  /* line 269, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_index.css.scss */
+  .article_index_title {
+    width: 20%;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+
+  /* line 275, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_index.css.scss */
+  .project_index_title {
+    width: 20%;
+    text-align: center;
+    margin: 1em 1em 0em;
+  }
+
+  /* line 281, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_index.css.scss */
+  .post_listing {
+    width: 100%;
+    margin-bottom: 0.2em;
+    margin-top: 2em;
+  }
+
+  /* line 286, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_index.css.scss */
+  .separate {
+    clear: both;
+  }
+
+  /* line 290, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_index.css.scss */
+  .center {
+    text-align: center;
+  }
+}
+/******About Specific*****/
+/* line 3, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_about.css.scss */
+.img_box {
+  width: 45%;
+  margin: auto;
+  padding: 2%;
+  margin-left: 40%;
+}
+
+/* line 10, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_about.css.scss */
+#about_img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 15, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_about.css.scss */
+.separate {
+  width: 2em;
+  color: #394043;
+}
+
+/* line 20, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_about.css.scss */
+.sub_title {
+  text-align: center;
+}
+
+/* line 23, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_about.css.scss */
+.about_text {
+  margin: 0% 14% 0% 41%;
+  padding: 1%;
+}
+
+@media (min-width: 640px) and (max-width: 1000px) {
+  /* line 31, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_about.css.scss */
+  .img_box {
+    width: 40%;
+    padding: 5%;
+  }
+
+  /* line 36, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_about.css.scss */
+  .about_text {
+    margin: 2% 5% 5% 14%;
+  }
+}
+/*****About Break for Tablets and Phones*****/
+@media (max-width: 639px) {
+  /* line 45, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_about.css.scss */
+  .img_box {
+    margin: auto;
+    padding: 5%;
+  }
+
+  /* line 50, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_about.css.scss */
+  .about_text {
+    margin: 5%;
+  }
+}
+/******* Page Title and Post Index *******/
+/* line 3, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_posts.css.scss */
+.sub_title_post {
+  width: 50%;
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 2em;
+  font-weight: 700;
+  padding: 0em;
+  margin-left: 30%;
+}
+
+/* line 12, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_posts.css.scss */
+.post_index {
+  float: right;
+}
+
+/******* Post Listing *******/
+/* line 16, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_posts.css.scss */
+.post_listing {
+  width: 100%;
+  text-align: center;
+}
+
+/* line 24, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_posts.css.scss */
+.date {
+  font-size: 0.75em;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 31, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_posts.css.scss */
+.post {
+  font-size: 1.1em;
+  text-decoration: none;
+  color: #2f383b;
+}
+
+/******* Post Show Styles *******/
+/* line 39, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_posts.css.scss */
+.body {
+  margin-left: 25%;
+}
+
+/* line 43, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_posts.css.scss */
+.date_post {
+  font-size: 0.5em;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 50, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_posts.css.scss */
+#post_img_div {
+  margin-left: 37%;
+}
+
+/* line 54, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_posts.css.scss */
+.post_img {
+  width: 29em;
+  height: auto;
+}
+
+/* line 59, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_posts.css.scss */
+.center_button {
+  width: 5%;
+  margin: auto;
+  margin-bottom: 4em;
+}
+
+/* line 65, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_posts.css.scss */
+.private_button {
+  width: 20%;
+  margin: 0.5em;
+  padding: 1em;
+  text-align: center;
+  text-decoration: none;
+  background-color: #66ccff;
+  color: #FFFFFF;
+  border: 2px solid #394043;
+}
+
+@media (min-width: 1001px) and (max-width: 1500px) {
+  /******* Page Title and Post Index *******/
+  /* line 83, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_posts.css.scss */
+  .post_index {
+    float: right;
+  }
+
+  /******* Post Listing *******/
+  /* line 87, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_posts.css.scss */
+  .post_listing {
+    width: 90%;
+  }
+
+  /* line 92, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_posts.css.scss */
+  .separate_posts {
+    margin-bottom: 2em;
+  }
+
+  /******* Post Show Styles *******/
+  /* line 98, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_posts.css.scss */
+  .body {
+    margin-left: 25%;
+  }
+
+  /* line 102, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_posts.css.scss */
+  #post_img_div {
+    margin-left: 42%;
+  }
+
+  /* line 106, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_posts.css.scss */
+  .post_img {
+    width: 25em;
+    height: auto;
+  }
+}
+@media (min-width: 641px) and (max-width: 1000px) {
+  /******* Page Title *******/
+  /* line 117, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_posts.css.scss */
+  .sub_title_post {
+    border: 2px Solid #394043;
+    font-size: 2em;
+  }
+
+  /******* Post Listing *******/
+  /* line 122, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_posts.css.scss */
+  .post_listing {
+    width: 100%;
+  }
+
+  /* line 126, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_posts.css.scss */
+  .separate {
+    margin-bottom: 1em;
+  }
+
+  /******* Post Show Styles *******/
+  /* line 132, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_posts.css.scss */
+  .body {
+    margin-left: 5%;
+  }
+
+  /* line 136, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_posts.css.scss */
+  #post_img_div {
+    margin-left: 22%;
+  }
+
+  /* line 140, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_posts.css.scss */
+  .post_img {
+    width: 25em;
+    height: auto;
+  }
+}
+/*****About Break for Tablets and Phones*****/
+@media (max-width: 640px) {
+  /******* Page Title *******/
+  /* line 150, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_posts.css.scss */
+  .sub_title_post {
+    border: 2px Solid #394043;
+    font-size: 1.5em;
+  }
+
+  /******* Post Listing *******/
+  /* line 155, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_posts.css.scss */
+  .post_listing {
+    width: 100%;
+  }
+
+  /* line 159, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_posts.css.scss */
+  .separate {
+    margin-bottom: 1em;
+  }
+
+  /******* Post Show Styles *******/
+  /* line 165, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_posts.css.scss */
+  .body {
+    margin-left: 5%;
+  }
+
+  /* line 169, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_posts.css.scss */
+  #post_img_div {
+    margin-left: 7%;
+  }
+
+  /* line 173, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_posts.css.scss */
+  .post_img {
+    width: 15em;
+    height: auto;
+  }
+
+  /* line 178, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_posts.css.scss */
+  .disabled {
+    color: #C0C0C0;
+  }
+  /* line 180, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_posts.css.scss */
+  .disabled:hover {
+    color: #C0C0C0;
+    background-color: #FFFFFF;
+  }
+}
+/*
+   Some simple Github-like styles, with syntax highlighting CSS via Pygments.
+*/
+/* line 5, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+pre {
+  background-color: #eee;
+  padding: 1.5rem 3.5%;
+  margin: 2rem 0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  overflow: auto;
+}
+
+/* line 14, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+code {
+  background-color: #eee;
+  padding: 1px 3px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
+/* line 22, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+.hll {
+  background-color: #ffffcc;
+}
+
+/* line 23, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+.c {
+  color: #999988;
+  font-style: italic;
+}
+
+/* Comment */
+/* line 24, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+.err {
+  color: #a61717;
+  background-color: #e3d2d2;
+}
+
+/* Error */
+/* line 25, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+.k {
+  color: #000000;
+  font-weight: bold;
+}
+
+/* Keyword */
+/* line 26, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+.o {
+  color: #000000;
+  font-weight: bold;
+}
+
+/* Operator */
+/* line 27, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+.cm {
+  color: #999988;
+  font-style: italic;
+}
+
+/* Comment.Multiline */
+/* line 28, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+.cp {
+  color: #999999;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Comment.Preproc */
+/* line 29, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+.c1 {
+  color: #999988;
+  font-style: italic;
+}
+
+/* Comment.Single */
+/* line 30, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+.cs {
+  color: #999999;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Comment.Special */
+/* line 31, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+.gd {
+  color: #000000;
+  background-color: #ffdddd;
+}
+
+/* Generic.Deleted */
+/* line 32, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+.ge {
+  color: #000000;
+  font-style: italic;
+}
+
+/* Generic.Emph */
+/* line 33, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+.gr {
+  color: #aa0000;
+}
+
+/* Generic.Error */
+/* line 34, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+.gh {
+  color: #999999;
+}
+
+/* Generic.Heading */
+/* line 35, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+.gi {
+  color: #000000;
+  background-color: #ddffdd;
+}
+
+/* Generic.Inserted */
+/* line 36, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+.go {
+  color: #888888;
+}
+
+/* Generic.Output */
+/* line 37, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+.gp {
+  color: #555555;
+}
+
+/* Generic.Prompt */
+/* line 38, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+.gs {
+  font-weight: bold;
+}
+
+/* Generic.Strong */
+/* line 39, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+.gu {
+  color: #aaaaaa;
+}
+
+/* Generic.Subheading */
+/* line 40, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+.gt {
+  color: #aa0000;
+}
+
+/* Generic.Traceback */
+/* line 41, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+.kc {
+  color: #000000;
+  font-weight: bold;
+}
+
+/* Keyword.Constant */
+/* line 42, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+.kd {
+  color: #000000;
+  font-weight: bold;
+}
+
+/* Keyword.Declaration */
+/* line 43, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+.kn {
+  color: #000000;
+  font-weight: bold;
+}
+
+/* Keyword.Namespace */
+/* line 44, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+.kp {
+  color: #000000;
+  font-weight: bold;
+}
+
+/* Keyword.Pseudo */
+/* line 45, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+.kr {
+  color: #000000;
+  font-weight: bold;
+}
+
+/* Keyword.Reserved */
+/* line 46, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+.kt {
+  color: #445588;
+  font-weight: bold;
+}
+
+/* Keyword.Type */
+/* line 47, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+.m {
+  color: #009999;
+}
+
+/* Literal.Number */
+/* line 48, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+.s {
+  color: #d01040;
+}
+
+/* Literal.String */
+/* line 49, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+.na {
+  color: #008080;
+}
+
+/* Name.Attribute */
+/* line 50, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+.nb {
+  color: #0086B3;
+}
+
+/* Name.Builtin */
+/* line 51, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+.nc {
+  color: #445588;
+  font-weight: bold;
+}
+
+/* Name.Class */
+/* line 52, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+.no {
+  color: #008080;
+}
+
+/* Name.Constant */
+/* line 53, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+.nd {
+  color: #3c5d5d;
+  font-weight: bold;
+}
+
+/* Name.Decorator */
+/* line 54, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+.ni {
+  color: #800080;
+}
+
+/* Name.Entity */
+/* line 55, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+.ne {
+  color: #990000;
+  font-weight: bold;
+}
+
+/* Name.Exception */
+/* line 56, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+.nf {
+  color: #990000;
+  font-weight: bold;
+}
+
+/* Name.Function */
+/* line 57, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+.nl {
+  color: #990000;
+  font-weight: bold;
+}
+
+/* Name.Label */
+/* line 58, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+.nn {
+  color: #555555;
+}
+
+/* Name.Namespace */
+/* line 59, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+.nt {
+  color: #000080;
+}
+
+/* Name.Tag */
+/* line 60, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+.nv {
+  color: #008080;
+}
+
+/* Name.Variable */
+/* line 61, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+.ow {
+  color: #000000;
+  font-weight: bold;
+}
+
+/* Operator.Word */
+/* line 62, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+.w {
+  color: #bbbbbb;
+}
+
+/* Text.Whitespace */
+/* line 63, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+.mf {
+  color: #009999;
+}
+
+/* Literal.Number.Float */
+/* line 64, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+.mh {
+  color: #009999;
+}
+
+/* Literal.Number.Hex */
+/* line 65, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+.mi {
+  color: #009999;
+}
+
+/* Literal.Number.Integer */
+/* line 66, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+.mo {
+  color: #009999;
+}
+
+/* Literal.Number.Oct */
+/* line 67, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+.sb {
+  color: #d01040;
+}
+
+/* Literal.String.Backtick */
+/* line 68, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+.sc {
+  color: #d01040;
+}
+
+/* Literal.String.Char */
+/* line 69, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+.sd {
+  color: #d01040;
+}
+
+/* Literal.String.Doc */
+/* line 70, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+.s2 {
+  color: #d01040;
+}
+
+/* Literal.String.Double */
+/* line 71, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+.se {
+  color: #d01040;
+}
+
+/* Literal.String.Escape */
+/* line 72, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+.sh {
+  color: #d01040;
+}
+
+/* Literal.String.Heredoc */
+/* line 73, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+.si {
+  color: #d01040;
+}
+
+/* Literal.String.Interpol */
+/* line 74, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+.sx {
+  color: #d01040;
+}
+
+/* Literal.String.Other */
+/* line 75, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+.sr {
+  color: #009926;
+}
+
+/* Literal.String.Regex */
+/* line 76, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+.s1 {
+  color: #d01040;
+}
+
+/* Literal.String.Single */
+/* line 77, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+.ss {
+  color: #990073;
+}
+
+/* Literal.String.Symbol */
+/* line 78, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+.bp {
+  color: #999999;
+}
+
+/* Name.Builtin.Pseudo */
+/* line 79, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+.vc {
+  color: #008080;
+}
+
+/* Name.Variable.Class */
+/* line 80, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+.vg {
+  color: #008080;
+}
+
+/* Name.Variable.Global */
+/* line 81, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+.vi {
+  color: #008080;
+}
+
+/* Name.Variable.Instance */
+/* line 82, /Users/chrisdavis777/Rails/blog/app/assets/stylesheets/_pygments.css.scss */
+.il {
+  color: #009999;
+}
+
+/* Literal.Number.Integer.Long */
